@@ -1,0 +1,307 @@
+body{
+    font-family:sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo{
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    padding-left: 240px;
+    float: left;
+}
+.menu{
+    float: left;
+    padding-left: 200px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 93% 100%/auto 90% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+.title_conteiner{
+    float: left;
+    margin: 230px 0px 0px 210px;
+    color: #2c384a;
+    text-align: center;
+}
+.title_conteiner h1{
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.title_conteiner h4{
+    margin-top: 20px;
+    font-size: 22px;
+    color: #79818d;
+}
+.title_conteiner input{
+    height: 35px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 30px 14px 0px 14px;
+}
+.main1{
+    width: 600px;
+    margin: 70px auto;
+    text-align: center;
+}
+.inf h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #263244;
+    text-decoration: underline #d17700;
+}
+.inf img{
+    margin: 60px 0px 0px 0px;
+}
+.inf p{
+    padding: 25px 0px 5px;
+    color: #3f495a;
+}
+.inf input{
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    border: 2px solid #6d7682;
+    border-radius: 5px;
+    background: url(../img/resume.png) 8px no-repeat;
+    color: #6d7682;
+    font-size: 13px;
+    padding-left: 15px;    
+}
+.header1{
+    background: url(../img/laptop.png) 245px 190px no-repeat, url(../img/знак.png) 510px 190px no-repeat, url(../img/ракета.png) 780px 190px no-repeat, url(../img/граммофон.png) 1050px 190px no-repeat, url(../img/bg2.jpg) center/cover no-repeat;
+}
+.header1 h2{
+    text-align: center;
+    margin: 60px 0px 160px;
+    padding-top: 70px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #263244;
+    text-decoration: underline #d17700;
+}
+ul.test {
+    display: flex;
+    text-align: center;
+    padding: 0px 140px 60px;
+}
+.list1 li{
+    width: 600px;
+    margin: 0px 35px;
+    line-height: 18px;
+    color: #3f495a;
+}
+.list1 h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: #cf7600;
+    padding-bottom: 10px;
+}
+.header2 h2{
+    text-align: center;
+    margin: 60px 0px 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #263244;
+    text-decoration: underline #d17700;
+}
+.main2 span{
+    color: #3f495a;
+    display:block;
+    width:425px;
+    margin: 0 auto; 
+    padding-bottom: 30px;
+}
+.main2 p{
+    width: 100%;
+    height: 100%;
+    border: 0px solid #000000;
+    text-align: center;
+}
+.left{
+    float: left;
+    margin: 0px 0px 0px 100px;
+}
+.left h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #384354;
+    padding-bottom: 7px;
+}
+.left input{
+    background-color: #63b5ae;
+    margin: 8px 0px 0px 0px;
+    border-radius: 5%;
+    width: 140px;
+    height: 30px;
+    color: #fff;    
+}
+.right h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #384354;
+    padding-bottom: 7px;
+}
+.right span{
+    line-height: 18px;
+}
+.header3 h2{
+    text-align: center;
+    margin: 100px 0px 30px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #263244;
+}
+.form{
+    width: 700px;
+    margin: 0px auto 0px 300px;
+}
+.form h3{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1c2534;
+    margin: 20px 0px 10px;  
+}
+.form select{
+    width: 800px;
+    height: 40px;
+    background-color: #eee;
+    padding: 0px 15px ;
+}
+.text span{
+    color: #1c2534;
+    font-weight: 600;
+}
+.header4{
+    background: url(../img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png) 248px 175px no-repeat, url(../img/скобки.png) 510px 175px no-repeat, url(../img/галочка.png) 785px 175px no-repeat, url(../img/кубок.png) 1047px 175px no-repeat, url(../img/bg3.jpg) center/cover no-repeat
+}
+.header4 h2{
+    text-align: center;
+    margin: 60px 0px 160px;
+    padding-top: 70px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #263244;
+    text-decoration: underline #d17700;
+}
+ul.test1 {
+    display: flex;
+    text-align: center;
+    padding: 0px 140px 60px;
+}
+.list2 li{
+    width: 600px;
+    line-height: 18px;
+    color: #3f495a;
+    text-transform: uppercase;
+}
+.list2 h4{
+    font-size: 23px;
+    font-weight: 900;
+    color: #323e4f;
+    padding-bottom: 15px;
+}
+.header5 h2{
+    text-align: center;
+    margin: 60px 0px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #263244;
+    text-decoration: underline #d17700;
+}
+.review{
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    margin: 0px auto;
+}
+.review p{
+    padding: 25px 0px 5px;
+    color: #3f495a;
+    line-height: normal;
+}
+footer{
+    height: 650px;
+    background: url(../img/bg4.jpg) center/cover no-repeat;
+}
+.header6 h2{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline #d17700;
+}
+.main3 p{
+    text-align: center;
+    margin: 30px 0px ;
+    color: #fff;
+}
+ul.test2{
+    display: flex;
+    text-align: center;
+    color: #fff;
+    padding: 80px 0px 20px;
+    background: url(../img/%D0%B3%D0%B5%D0%BE.png) 215px no-repeat, url(../img/конверт.png) 660px no-repeat, url(../img/труба.png) 1115px no-repeat 
+}
+.main3 li{
+    width: 600px;
+    color: #fff;
+}
+.main3 h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin:30px 0px;
+}
+.button{
+    text-align: center;
+}
+.button input{
+    width: 300px;
+    height: 27px;
+    padding-left: 10px;
+    background-color: #d2d6dc;
+    margin-right: 20px;
+    
+}
+.button textarea{
+    width: 625px;
+    height:100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px 0px 0px 10px;
+    background-color: #d2d6dc;
+}
+input.last_button{
+    border: 2px solid #fff;
+    border-radius: 10%;
+    background: none;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    padding-right: 5px;
+    margin-top: 20px;
+}
