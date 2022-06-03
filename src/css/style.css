@@ -1,3 +1,61 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e0e0e0;
+  z-index: 1001;
+}
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+.loaded .preloader {
+  display: none;
+}
 body{
     font-family:sans-serif;
 }
@@ -178,7 +236,7 @@ main{
     color: #6d7682;
     font-size: 13px;
     padding-left: 15px; 
-    transition: all 0.2s;
+    transition: 0.2s;
     transform: scale(1)
 }
 .inf input:hover{
@@ -216,6 +274,14 @@ ul.test {
     font-weight: 600;
     color: #cf7600;
     padding-bottom: 10px;
+}
+.list img{
+    display: inline-block;
+    margin: 100px 50px 0px 20px;
+}
+.list1 p::first-letter{
+    font-size: 20px;
+    color: #cf7600;
 }
 .page4{
     width: 100%;
@@ -262,6 +328,7 @@ ul.test {
     height: 30px;
     color: #fff; 
     transform: scale(1);
+    transition: 0.2s;
 }
 .right h3{
     font-size: 16px;
@@ -278,6 +345,10 @@ ul.test {
 .left input:active{
     transform: scale(0.9);
 }
+.left input:hover{
+  background-color: #85d6cf;  
+}
+
 .header3 h2{
     text-align: center;
     margin: 100px 0px 30px;
@@ -301,21 +372,22 @@ ul.test {
     width: 800px;
     height: 40px;
     background-color: #eee;
-    padding: 0px 15px ;
+    padding: 0px 15px;
+    transition: all 0.2s;
 }
 .text span{
     color: #1c2534;
     font-weight: 600;
 }
-.page6{
-    
-}  
+.form select:hover{
+    background-color: lightgray;
+} 
 .header4{
-    background: url(../img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png) 248px 175px no-repeat, url(../img/скобки.png) 510px 175px no-repeat, url(../img/галочка.png) 785px 175px no-repeat, url(../img/кубок.png) 1047px 175px no-repeat, url(../img/bg3.jpg) center/cover no-repeat
+    background: url(../img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png) 248px 175px no-repeat, url(../img/скобки.png) 510px 175px no-repeat, url(../img/галочка.png) 785px 175px no-repeat, url(../img/кубок.png) 1047px 175px no-repeat, url(../img/bg3.jpg) center/cover no-repeat fixed;
 }
 .header4 h2{
     text-align: center;
-    margin: 60px 0px 160px;
+    margin: -180px 0px 160px;
     padding-top: 70px;
     font-size: 25px;
     font-weight: 600;
@@ -380,7 +452,7 @@ footer{
     margin: 30px 0px ;
     color: #fff;
 }
-ul.test2{
+.test2{
     display: flex;
     text-align: center;
     color: #fff;
@@ -390,6 +462,12 @@ ul.test2{
 .main3 li{
     width: 600px;
     color: #fff;
+}
+.main3 li a{
+    color: #fff;
+}
+.main3 li a:visited{
+    color: darkgray;
 }
 .main3 h4{
     color: #fff;
@@ -407,7 +485,7 @@ ul.test2{
     padding-left: 10px;
     background-color: #d2d6dc;
     margin-right: 20px;
-    
+    transition: 
 }
 .button textarea{
     width: 625px;
@@ -426,4 +504,17 @@ input.last_button{
     height: 35px;
     padding-right: 5px;
     margin-top: 20px;
+    transition: 0.2s;
+    transform: scale(1)
+}
+input.last_button:active{
+    transform: scale(0.8)
+}
+.field:focus{
+    background-color: #fff;
+    border: 1px solid #e88604;  
+}
+.button textarea:focus{
+    background-color: #fff;
+    border: 1px solid #e88604; 
 }

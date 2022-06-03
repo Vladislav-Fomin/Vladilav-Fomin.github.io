@@ -16,7 +16,22 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function() {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
 
+    </script>
     <header>
         <nav>
             <div class="logo">Владислав Фомин</div>
@@ -60,16 +75,20 @@
             <section class="list1">
                 <ul class="test">
                     <li>
-                        <h4>Веб-дизайн</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, esse.
+                        <h4>Веб-дизайн</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, esse.</p>
                     </li>
                     <li>
-                        <h4>Разработка</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore distinctio ex reiciendis, quidem aliquid ratione.
+                        <h4>Разработка</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore distinctio ex reiciendis, quidem aliquid ratione.</p>
                     </li>
                     <li>
-                        <h4>CEO-Оптимизация</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum similique doloremque modi et?
+                        <h4>CEO-Оптимизация</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum similique doloremque modi et?</p>
                     </li>
                     <li>
-                        <h4>Маркетинг</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore reprehenderit eos sint incidunt repudiandae porro expedita ipsa recusandae.
+                        <h4>Маркетинг</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore reprehenderit eos sint incidunt repudiandae porro expedita ipsa recusandae.</p>
                     </li>
                 </ul>
             </section>
@@ -87,7 +106,7 @@
                 <h3>CLIENT:</h3>
                 <span>Какая-то компания</span>
                 <h3>WEBSITE:</h3>
-                <a href="https://vk.com/1ny_takoe">Ссылка</a>
+                <a href="https://vk.com/1ny_takoe" target="_blank">Ссылка</a>
                 <br><input type="button" value="VISIT LIVE SITE">
             </div>
             <div class="right">
@@ -177,16 +196,16 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, minima!</p>
             <ul class="test2">
                 <li>Верхняя салда</li>
-                <li>efuhi@gmail.com</li>
+                <li><a href="mailto:vladfomin10@gmail.com" target="_blank">vladfomin10@gmail.com</a></li>
                 <li>+7 999 999-99-99</li>
             </ul>
             <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
-            <div class="button">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Email">
+            <form class="button">
+                <input class="field" type="text" placeholder="Имя" required>
+                <input class="field" id="Email" type="Email" placeholder="Email" autocomplete="on" required>
                 <br><textarea name="message" id="1" cols="45" rows="10" placeholder="Сообщение"></textarea>
                 <br><input type="submit" value="Отправить" class="last_button">
-            </div>
+            </form>
         </div>
     </footer>
 </body>
