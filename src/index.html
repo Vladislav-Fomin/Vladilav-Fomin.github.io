@@ -12,6 +12,8 @@
 
     <title>Влад Фомин веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,33 +36,62 @@
     </script>
     <header>
         <nav>
-            <div class="logo">Владислав Фомин</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-6">
+                        <div class="logo">Владислав Фомин</div>
+                    </div>
+                    <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Навигация
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <section class="main">
-            <div class="title_conteiner">
-                <h1>Привет <br> Я Владислав Фомин</h1>
-                <h4>Фулл стек веб-разработчик</h4>
-                <input type="button" value="Обо мне">
-                <input type="button" value="Мои работы">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title_container mt-5">
+                            <h1>Привет <br> Я Владислав Фомин</h1>
+                            <h4>Фулл стек веб-разработчик</h4>
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <main class="page2">
         <section class="main1">
             <div class="inf">
-                <h2> ОБО МНЕ</h2>
+                <h2>ОБО МНЕ</h2>
                 <img src="img/mini_man.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
@@ -70,38 +101,51 @@
     </main>
 
     <main>
-        <div class="header1">
+        <section class="header1">
             <h2>ЧТО Я УМЕЮ</h2>
-            <section class="list1">
+            <div class="container">
+            <div class="row">
+            <div class="list1">
                 <ul class="test">
                     <li>
+                       <i class="fa fa-laptop icons" aria-hidden="true"></i>
                         <h4>Веб-дизайн</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, esse.</p>
                     </li>
+                    
                     <li>
+                       <i class="fa fa-code icons" aria-hidden="true"></i>
                         <h4>Разработка</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore distinctio ex reiciendis, quidem aliquid ratione.</p>
                     </li>
+
                     <li>
+                       <i class="fa fa-rocket icons" aria-hidden="true"></i>
                         <h4>CEO-Оптимизация</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum similique doloremque modi et?</p>
                     </li>
+                    
                     <li>
+                       <i class="fa fa-bullhorn icons" aria-hidden="true"></i>
                         <h4>Маркетинг</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore reprehenderit eos sint incidunt repudiandae porro expedita ipsa recusandae.</p>
                     </li>
+                    
                 </ul>
-            </section>
-        </div>
+            </div>
+            </div>
+            </div>
+        </section>
     </main>
 
     <main class="page4">
-        <div class="header2">
+           <div class="header2">
             <h2>КЕЙСЫ</h2>
-        </div>
+            </div>
         <section class="main2">
+           <div class="container">
+           <div class="row">
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, alias.</span>
-            <p><img src="img/case.jpg" alt="" class="photo"></p>
             <div class="left">
                 <h3>CLIENT:</h3>
                 <span>Какая-то компания</span>
@@ -113,9 +157,10 @@
                 <h3>Название проекта</h3>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum modi voluptas vitae, id aliquam possimus eos, atque. Omnis a, minus natus nam, architecto sit ad fugiat quam? Dolorum, aliquam alias!</span>
             </div>
+            </div>
+            </div>
         </section>
     </main>
-
     <main classs="page5">
         <div class="header3">
             <h2>Расчет стоимости</h2>
@@ -208,6 +253,7 @@
             </form>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
 </body>
 
 </html>
