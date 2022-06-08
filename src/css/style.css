@@ -87,7 +87,7 @@ nav{
     animation: coming 2s ease;
     font-family: 'Franklin Gothic', sans-serif;
 }
-main{
+main.start{
     width: 100%;
     height: 100%;
 }
@@ -238,16 +238,11 @@ main{
         background: rgba(0,0,0,0.4);
     }
     .title_container input{
-        border: 2px solid white;
+         border: 2px solid white;
     }
 }
-.page2{
-    width: 100%;
-    height: 520px;
-}
 .main1{
-    width: 600px;
-    margin: 70px auto;
+    margin: 70px 0px;
     text-align: center;
 }
 .inf h2{
@@ -257,11 +252,12 @@ main{
     text-decoration: underline #d17700;
 }
 .inf img{
-    margin: 60px 0px 0px 0px;
+    margin: 60px 0px 20px;
 }
 .inf p{
-    padding: 25px 0px 5px;
     color: #3f495a;
+    display: flex;
+    text-align: left;
 }
 .inf input{
     margin-top: 20px;
@@ -324,12 +320,9 @@ ul.test {
 @media (max-width: 992px){
     ul.test{
         text-align: left;
+    }
 }
-.page4{
-    width: 100%;
-    height: 850px;
-    margin-top: -230px;
-}
+
 .header2 h2{
     text-align: center;
     margin: 60px 0px 30px;
@@ -341,25 +334,19 @@ ul.test {
 }
 .main2 span{
     color: #3f495a;
-    display:block;
-    width:425px;
-    margin: 0 auto; 
-    padding-bottom: 30px;
 }
 .left{
-    float: left;
-    margin: 0px 0px 0px 100px;
+    float: left;   
 }
 .left h3{
     font-size: 16px;
     font-weight: 600;
     color: #384354;
-    padding-bottom: 7px;
 }
 .left input{
     background-color: #63b5ae;
     margin: 8px 0px 0px 0px;
-    border-radius: 5%;
+    border-radius: 5px;
     width: 140px;
     height: 30px;
     color: #fff; 
@@ -370,7 +357,7 @@ ul.test {
     font-size: 16px;
     font-weight: 600;
     color: #384354;
-    padding-bottom: 7px;
+    
 }
 .right span{
     line-height: 18px;
@@ -384,6 +371,13 @@ ul.test {
 .left input:hover{
   background-color: #85d6cf;  
 }
+.box{
+    box-shadow:
+        inset rgba(0,0,0,0.2) 0 -3px 8px,
+        inset rgba(252,255,255,0.7) 0 3px 8px,
+        rgba(0,0,0,0.2) 0 3px 8px -3px;
+    
+}
 .header3 h2{
     text-align: center;
     margin: 100px 0px 30px;
@@ -391,10 +385,6 @@ ul.test {
     font-size: 25px;
     font-weight: 600;
     color: #263244;
-}
-.form{
-    width: 100%px;
-    margin: 0px auto 0px 300px;
 }
 .form h3{
     font-size: 15px;
@@ -410,19 +400,49 @@ ul.test {
     padding: 0px 15px;
     transition: all 0.2s;
 }
+.text{
+    text-align: center;
+}
 .text span{
     color: #1c2534;
     font-weight: 600;
+    display: flex;
+    text-align: left;
+}
+
+.cost input{
+    background-color: #00b6af;
+    color: #fff;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    margin: 25px 0px 35px;
+    transform: scale(1);
+    transition: 0.2s;
+}
+.cost input:active{
+    transform: scale(0.9);
+}
+.cost input:hover{
+    background-color: #6dc7c4;
 }
 .form select:hover{
     background-color: lightgray;
-} 
+}
+
 .header4{
-    background: url(../img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png) 248px 175px no-repeat, url(../img/скобки.png) 510px 175px no-repeat, url(../img/галочка.png) 785px 175px no-repeat, url(../img/кубок.png) 1047px 175px no-repeat, url(../img/bg3.jpg) center/cover no-repeat fixed;
+    background: url(../img/bg3.jpg) center/cover no-repeat fixed;
+    margin: 210px 0px 300px;
+}
+.icons2{
+    text-align: center;
+    font-size: 50px;
+    padding: 15px;
+    color: #e97e00;
 }
 .header4 h2{
     text-align: center;
-    margin: -180px 0px 160px;
+    margin: -180px 0px 80px;
     padding-top: 70px;
     font-size: 25px;
     font-weight: 600;
@@ -432,7 +452,7 @@ ul.test {
 ul.test1 {
     display: flex;
     text-align: center;
-    padding: 0px 140px 60px;
+    padding-bottom: 60px;
 }
 .list2 li{
     width: 600px;
@@ -446,10 +466,6 @@ ul.test1 {
     color: #323e4f;
     padding-bottom: 15px;
 }
-.page7{
-    width: 100%;
-    height: 400px;
-}
 .header5 h2{
     text-align: center;
     margin: 60px 0px;
@@ -460,19 +476,19 @@ ul.test1 {
     margin-top: -220px;
 }
 .review{
-    width: 600px;
-    height: 300px;
     text-align: center;
-    margin: 0px auto;
+    margin: 0px 0px 40px ;
+    
 }
 .review p{
-    padding: 25px 0px 5px;
+    padding: 25px 0px 0px;
     color: #3f495a;
     line-height: normal;
 }
+
 footer{
-    height: 650px;
     background: url(../img/bg4.jpg) center/cover no-repeat;
+    padding-bottom: 100px;
 }
 .header6 h2{
     text-align: center;
@@ -490,13 +506,17 @@ footer{
 .test2{
     display: flex;
     text-align: center;
-    color: #fff;
-    padding: 80px 0px 20px;
-    background: url(../img/%D0%B3%D0%B5%D0%BE.png) 215px no-repeat, url(../img/конверт.png) 660px no-repeat, url(../img/труба.png) 1115px no-repeat 
+    color: #fff; 
 }
 .main3 li{
     width: 600px;
     color: #fff;
+}
+.icons3{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
 }
 .main3 li a{
     color: #fff;
@@ -519,20 +539,19 @@ footer{
     height: 27px;
     padding-left: 10px;
     background-color: #d2d6dc;
-    margin-right: 20px;
-    transition: 
+    margin-right: 20px; 
 }
 .button textarea{
+    margin-top: 20px;
     width: 625px;
     height:100px;
-    margin-top: 20px;
     margin-right: 20px;
     padding: 10px 0px 0px 10px;
     background-color: #d2d6dc;
 }
 input.last_button{
     border: 2px solid #fff;
-    border-radius: 10%;
+    border-radius: 5px;
     background: none;
     color: #fff;
     width: 100px;
