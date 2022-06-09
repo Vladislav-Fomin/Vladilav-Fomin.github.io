@@ -68,10 +68,10 @@
   display: none;
 }
 body{
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 nav{
-    /*width: 100%;*/
+    width: 100%;
     height: 60px;
     background: #344051;
     position: fixed;
@@ -279,14 +279,14 @@ main.start{
 .inf input:active{
     transform: scale(0.9)
 }
-@media (max-width:768px){
+@media(max-width:768px){
     .inf p{
-        font-size: 20px;
+        font-size: 16px;
     }
     .inf input{
-        width: 180px;
-        height: 50px;
-        font-size: 18px;
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
     }
 }
 .header1{
@@ -299,8 +299,8 @@ main.start{
 }
 .header1 h2{
     text-align: center;
-    margin: 60px 0px 100px;
-    padding-top: 70px;
+    margin: 50px 0px 60px;
+    
     font-size: 25px;
     font-weight: 600;
     color: #263244;
@@ -312,10 +312,11 @@ ul.test {
     justify-content: space-around;
 }
 .list1 li{
-    /*width: 600px;*/
-    margin: 0px 35px;
+    /*width: 600px;
+    margin: 0px 35px;*/
     line-height: 18px;
     color: #3f495a;
+    
 }
 .list1 h4{
     font-size: 17px;
@@ -332,7 +333,17 @@ ul.test {
         text-align: left;
     }
 }
-
+@media(max-width:768px){
+    ul.test{
+        display: inline-block;
+        text-align: center;
+        
+    }
+    .list1 li{
+        line-height: 22px;
+        font-size: 16px;
+    }
+}
 .header2 h2{
     text-align: center;
     margin: 60px 0px 30px;
@@ -342,11 +353,19 @@ ul.test {
     color: #263244;
     text-decoration: underline #d17700;
 }
+.case_span{
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px; 
+}
 .main2 span{
     color: #3f495a;
 }
 .left{
-    float: left;   
+    float: left;
+    padding-right: 50px;
+    height: 240px;
 }
 .left h3{
     font-size: 16px;
@@ -362,6 +381,10 @@ ul.test {
     color: #fff; 
     transform: scale(1);
     transition: 0.2s;
+}
+.right{
+    margin-top: 20px;
+    
 }
 .right h3{
     font-size: 16px;
@@ -380,6 +403,12 @@ ul.test {
 }
 .left input:hover{
   background-color: #85d6cf;  
+}
+@media(max-width:768px){
+    .main2 span{
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 .box{
     box-shadow:
@@ -463,10 +492,13 @@ ul.test1 {
     display: flex;
     text-align: center;
     padding-bottom: 60px;
+    justify-content: space-around;
 }
 .list2 li{
-    width: 600px;
+    /*width: 600px;*/
     line-height: 18px;
+    font-size: 14px;
+    font-weight: 600;
     color: #3f495a;
     text-transform: uppercase;
 }
@@ -475,6 +507,14 @@ ul.test1 {
     font-weight: 900;
     color: #323e4f;
     padding-bottom: 15px;
+}
+@media(max-width:576px){
+    .list2 h4{
+        font-size: 17px;
+    }
+    .list2 li{
+       font-size: 12px; 
+    }
 }
 .header5 h2{
     text-align: center;
@@ -495,7 +535,12 @@ ul.test1 {
     color: #3f495a;
     line-height: normal;
 }
-
+@media(max-width:768px){
+    .review p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
 footer{
     background: url(../img/bg4.jpg) center/cover no-repeat;
     padding-bottom: 100px;
@@ -548,12 +593,13 @@ footer{
     width: 300px;
     height: 27px;
     padding-left: 10px;
+    margin-top:10px;
     background-color: #d2d6dc;
     margin-right: 20px; 
 }
 .button textarea{
     margin-top: 20px;
-    /*width: 625px;*/
+    width: 625px;
     height:100px;
     margin-right: 20px;
     padding: 10px 0px 0px 10px;
@@ -570,6 +616,13 @@ input.last_button{
     margin-top: 20px;
     transition: 0.2s;
     transform: scale(1)
+}
+@media(max-width:768px){
+    .button textarea{
+        width: 300px;
+        margin-top:10px;
+    }
+    
 }
 input.last_button:active{
     transform: scale(0.8)
