@@ -365,7 +365,7 @@ ul.test {
 .left{
     float: left;
     padding-right: 50px;
-    height: 240px;
+    
 }
 .left h3{
     font-size: 16px;
@@ -394,6 +394,8 @@ ul.test {
 }
 .right span{
     line-height: 18px;
+   
+    display: flex;
 }
 .left a:visited{
     color: #63b5ae;
