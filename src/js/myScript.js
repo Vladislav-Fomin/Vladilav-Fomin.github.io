@@ -3,12 +3,11 @@
 let inf = [];
 
 while (true) {
-    let siteType = prompt(`Тип сайта\n1-landing page\n2-сайт визитка\n3-коропоративный сайт`);
+    let siteType = prompt(`Тип сайта\n1-landing page\n2-сайт визитка\n3-корпоративный сайт`);
     if (siteType > 0 && siteType < 4) {
         inf.push(siteType);
         break;
-    } 
-    else {
+    } else {
         alert("Данные введены неверно");
     }
 };
@@ -17,8 +16,7 @@ while (true) {
     if (design > 0 && design < 3) {
         inf.push(design);
         break;
-    } 
-    else {
+    } else {
         alert("Данные введены неверно");
     }
 };
@@ -27,11 +25,59 @@ while (true) {
     if (adaptability > 0 && adaptability < 4) {
         inf.push(adaptability);
         break;
-    } 
-    else {
+    } else {
         alert("Данные введены неверно");
     }
 };
 
-console.log(inf);
 
+let price = [];
+let terms = [];
+
+if (inf[0] == 1) {
+    price.push(1000);
+    terms.push(1);
+} 
+else if (inf[0] == 2) {
+    price.push(3000);
+    terms.push(2);
+} 
+else {
+    price.push(5000);
+    terms.push(4);
+}
+if (inf[1] == 1) {
+    price.push(1000);
+    terms.push(2);
+} 
+else {
+    price.push(3000);
+    terms.push(4);
+} 
+if (inf[2] == 1) {
+    price.push(5000);
+    terms.push(4);
+} 
+else if (inf[2] == 2) {
+    price.push(2000);
+    terms.push(2);
+} 
+else {
+    price.push(3000);
+    terms.push(2);
+}
+
+
+let sumPrice;
+function calcPrice(){
+    sumPrice = price[0] + price[1] + price[2];
+}
+calcPrice(price[0], price[1], price[2]);
+
+let sumTerms;
+function calcTerms(){
+    sumTerms = terms[0] +terms[1] + terms[2];
+}
+calcTerms(terms[0], terms[1], terms[2]);
+
+alert(`Стоимость: `  + (sumPrice) + `\nСроки: ` + (sumTerms));
