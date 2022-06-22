@@ -353,6 +353,7 @@ ul.test {
     color: #263244;
     text-decoration: underline #d17700;
 }
+
 .case_span{
     display: block;
     text-align: center;
@@ -497,7 +498,7 @@ ul.test1 {
     justify-content: space-around;
 }
 .list2 li{
-    /*width: 600px;*/
+    
     line-height: 18px;
     font-size: 14px;
     font-weight: 600;
@@ -532,13 +533,23 @@ ul.test1 {
     margin: 0px 0px 40px ;
     
 }
-.review p{
+.rev_photo{
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: cover;
+}
+.rev_name{
+    font-weight: 600;
+    font-size: 16px;
+    color: #3f495a;
+}
+.rev_text{
     padding: 25px 0px 0px;
     color: #3f495a;
     line-height: normal;
 }
 @media(max-width:768px){
-    .review p{
+    .rev_text{
         font-size: 16px;
         line-height: 22px;
     }

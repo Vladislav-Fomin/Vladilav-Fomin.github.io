@@ -8,7 +8,7 @@ window.onload = function () {
     }, 500);
 }
 
-(window).scroll(() => {
+$(window).scroll(() => {
     let scrollDist = $(window).scrollTop();
     $(".section").each((i, el) => {
         if ($(el).offset().top - $("nav").outerHeight() <= scrollDist) {
@@ -31,7 +31,14 @@ $('a[href^="#"]').click(function () {
     });
 });
 
+$(function() {
+    
+    $('.rev_slider').slick({
+        arrows: false,
+        dots: true
+    })
 
+});
 
 /*
 let inf = [];
