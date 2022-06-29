@@ -87,6 +87,20 @@ nav{
     animation: coming 2s ease;
     font-family: 'Franklin Gothic', sans-serif;
 }
+.logo a{
+    text-decoration: none;
+    transform: scale(1);    
+    transition: all 0.1s;
+}
+.logo a:visited{
+    color: white;
+}
+.logo a:hover{
+    color: #e88604;
+}
+.logo a:active{
+    transform: scale(0.9);
+}
 main.start{
     width: 100%;
     height: 100%;
@@ -241,8 +255,9 @@ main.start{
          border: 2px solid white;
     }
 }
-.main1{
-    margin: 70px 0px;
+
+.inf{
+    margin: 50px 0px 30px;
     text-align: center;
 }
 .inf h2{
@@ -252,7 +267,7 @@ main.start{
     text-decoration: underline #d17700;
 }
 .inf img{
-    margin: 60px 0px 20px;
+    margin: 40px 0px 20px;
 }
 .inf p{
     color: #3f495a;
@@ -289,6 +304,7 @@ main.start{
         font-size: 16px;
     }
 }
+
 .header1{
     background: url(../img/bg2.jpg) center/cover no-repeat;
 }
@@ -357,23 +373,27 @@ ul.test {
 .case_span{
     display: block;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 16px; 
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #2f4154;
 }
-.main2 span{
-    color: #3f495a;
+
+.case_slider h3{
+    font-size: 17px;
+    font-weight: 600;
+    color: #2f4154;
 }
-.left{
+.case_inf{
     float: left;
-    padding-right: 50px;
+    margin-top: 20px;
+}
+.case_text{
+    margin-top: 20px;
+    padding-left: 200px;
+    line-height: 18px;
     
 }
-.left h3{
-    font-size: 16px;
-    font-weight: 600;
-    color: #384354;
-}
-.left input{
+.case_slider input{
     background-color: #63b5ae;
     margin: 8px 0px 0px 0px;
     border-radius: 5px;
@@ -383,28 +403,17 @@ ul.test {
     transform: scale(1);
     transition: 0.2s;
 }
-.right{
-    margin-top: 20px;
-    
+.case_slider a{
+    text-decoration: none;
 }
-.right h3{
-    font-size: 16px;
-    font-weight: 600;
-    color: #384354;
-    
-}
-.right span{
-    line-height: 18px;
-   
-    display: flex;
-}
-.left a:visited{
+
+.case_slider a:visited{
     color: #63b5ae;
 }
-.left input:active{
+.case_slider input:active{
     transform: scale(0.9);
 }
-.left input:hover{
+.case_slider input:hover{
   background-color: #85d6cf;  
 }
 @media(max-width:768px){
@@ -531,17 +540,16 @@ ul.test1 {
 .review{
     text-align: center;
     margin: 0px 0px 40px ;
-    
 }
-.rev_photo{
-    max-width: 20px;
-    max-height: 20px;
-    object-fit: cover;
+.rev_photo img{
+    display: block;
+    margin: 0 auto;
 }
 .rev_name{
     font-weight: 600;
     font-size: 16px;
     color: #3f495a;
+    margin-top: 20px;
 }
 .rev_text{
     padding: 25px 0px 0px;

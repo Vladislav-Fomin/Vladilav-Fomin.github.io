@@ -9,33 +9,43 @@ window.onload = function () {
 }
 
 $(window).scroll(() => {
-    let scrollDist = $(window).scrollTop();
+    let scrollDistance = $(window).scrollTop();
+    
     $(".section").each((i, el) => {
-        if ($(el).offset().top - $("nav").outerHeight() <= scrollDist) {
+        
+        if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
             $("nav a").each((i, el) => {
                 if ($(el).hasClass("active")) {
                     $(el).removeClass("active");
                 }
             });
-            $('nav li:eq(' + i + ')').find('a').addClass('active');
+            
+            $('nav li:eq('+ i +')').find('a').addClass('active');
         }
     });
 });
 
-
-
 $('a[href^="#"]').click(function () {
     let varHref = $(this).attr("href");
-    $('html, body').animate({
-        scrollTop: $(valHref).offset().top - 20 + "px"
-    });
+    $('html, body').animate({scrollTop: $(valHref).offset().top - 20 + "px"});
+});
+
+$(function() {
+    
+    $('.case_slider').slick({
+        arrows: true,
+        dots: true,
+        adaptiveHeight: true,      
+    })
+
 });
 
 $(function() {
     
     $('.rev_slider').slick({
         arrows: false,
-        dots: true
+        dots: true,
+        adaptiveHeight: true 
     })
 
 });

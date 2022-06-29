@@ -9,13 +9,14 @@
     <meta name="robots" content="all">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="">
-    <title>Влад Фомин веб-разработчик</title>
+    <title>Владислав Фомин веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-lg-3 col-md-6 col-7">
-                        <div class="logo">Владислав Фомин</div>
+                        <div class="logo"><a href="#mainPage">Владислав Фомин</a></div>
                     </div>
                     <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
@@ -51,12 +52,12 @@
                                 Навигация
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                                <li><a class="dropdown-item" href="#">Услуги</a></li>
-                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                                <li><a class="dropdown-item" href="#">Прайс</a></li>
-                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                <li><a class="dropdown-item" href="#aboutMe">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#services">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#price">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +65,7 @@
             </div>
         </nav>
     </header>
-    <main class="start">
+    <main class="start" class="section" id="mainPage">
         <section class="main">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -80,27 +81,27 @@
             </div>
         </section>
     </main>
-    <main class="page2" class="section" id="aboutMe">
-        <section class="main1">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="inf">
-                            <h2>ОБО МНЕ</h2>
-                            <img src="img/mini_man.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
-                            <input type="button" value="Скачать резюме">
-                        </div>
+    <section class="section" id="aboutMe">
 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="inf">
+                        <h2>ОБО МНЕ</h2>
+                        <img src="img/mini_man.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
+                        <input type="button" value="Скачать резюме">
                     </div>
+
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <main class="page3" class="section" id="services">
-        <section class="header1">
+
+    <section class="section" id="services">
+        <div class="header1">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -140,48 +141,85 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <main class="page4" class="section" id="cases">
+    <section class="section" id="cases">
         <div class="header2">
             <h2>КЕЙСЫ</h2>
         </div>
-        <section class="main2">
+        <div class="main2">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <span class="case_span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, alias.</span>
-                        <div class="fotorama" data-allowfullscreen="native" data-nav="thumbs">
-                            <img src="img/case.jpg" alt="">
-                            <img src="img/bg3.jpg" alt="">
-                            <img src="img/bg2.jpg" alt="">
+                        <div class="case_slider">
+                            <div class="slider">
+
+                                <div class="case_photo">
+                                    <a data-fancybox="gallery" href="img/case.jpg">
+                                        <img src="img/case.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="case_inf">
+                                    <h3>CLIENT:</h3>
+                                    <span>Какая-то компания</span>
+                                    <h3>WEBSITE:</h3>
+                                    <a href="https://vk.com/1ny_takoe" target="_blank">Ссылка</a>
+                                    <br><input type="button" value="Перейти на сайт">
+                                </div>
+                                <div class="case_text">
+                                    <h3>Название проекта</h3>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum modi voluptas vitae, id aliquam possimus eos, atque. Omnis a, minus natus nam, architecto sit ad fugiat quam? Dolorum, aliquam alias!</span>
+                                </div>
+                            </div>
+
+                            <div class="slider">
+                                <div class="case_photo">
+                                    <a data-fancybox="gallery" href="img/bg3.jpg">
+                                        <img src="img/bg3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="case_inf">
+                                    <h3>CLIENT:</h3>
+                                    <span>Какая-то компания</span>
+                                    <h3>WEBSITE:</h3>
+                                    <a href="https://vk.com/1ny_takoe" target="_blank">Ссылка</a>
+                                    <br><input type="button" value="Перейти на сайт">
+                                </div>
+                                <div class="case_text">
+                                    <h3>Название проекта</h3>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum modi voluptas vitae, id aliquam possimus eos, atque. Omnis a, minus natus nam, architecto sit ad fugiat quam? Dolorum, aliquam alias!</span>
+                                </div>
+                            </div>
+
+                            <div class="slider">
+                                <div class="case_photo">
+                                    <a data-fancybox="gallery" href="img/bg2.jpg">
+                                        <img src="img/bg2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="case_inf">
+                                    <h3>CLIENT:</h3>
+                                    <span>Какая-то компания</span>
+                                    <h3>WEBSITE:</h3>
+                                    <a href="https://vk.com/1ny_takoe" target="_blank">Ссылка</a>
+                                    <br><input type="button" value="Перейти на сайт">
+                                </div>
+                                <div class="case_text">
+                                    <h3>Название проекта</h3>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum modi voluptas vitae, id aliquam possimus eos, atque. Omnis a, minus natus nam, architecto sit ad fugiat quam? Dolorum, aliquam alias!</span>
+                                </div>
+                            </div>
                         </div>
 
-
-                        <div class="cases_inf">
-                            <div class="left">
-
-                                <h3>CLIENT:</h3>
-                                <span>Какая-то компания</span>
-                                <h3>WEBSITE:</h3>
-                                <a href="https://vk.com/1ny_takoe" target="_blank">Ссылка</a>
-                                <br><input type="button" value="Перейти на сайт">
-
-                            </div>
-                            <div class="right">
-
-                                <h3>Название проекта</h3>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum modi voluptas vitae, id aliquam possimus eos, atque. Omnis a, minus natus nam, architecto sit ad fugiat quam? Dolorum, aliquam alias!</span>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <main classs="page5" class="section" id="price">
+        </div>
+    </section>
+    <section class="section" id="price">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10">
@@ -189,7 +227,7 @@
                         <div class="header3">
                             <h2>Расчет стоимости</h2>
                         </div>
-                        <section class="form">
+                        <div class="form">
                             <div class="container px-5">
                                 <div class="row">
                                     <h3>Тип сайта</h3>
@@ -225,17 +263,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <main class="page6" class="section">
+    <section class="section">
         <div class="header4">
             <h2>НЕМНОГО СТАТИСТИКИ</h2>
-            <section class="list2">
+            <div class="list2">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -260,45 +298,42 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <main class="page7" class="section" id="reviews">
+    <section class="section" id="reviews">
         <div class="header5">
             <h2>ОТЗЫВЫ</h2>
         </div>
-        <section class="review">
+        <div class="review">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        
+
                         <div class="rev_slider">
                             <div class="slide">
-                              
-                               <div class="rew_photo"><img src="img/review.jpg" alt=""></div>
+                                <div class="rev_photo"><img src="img/review.jpg" alt=""></div>
                                 <div class="rev_name">Владислав</div>
                                 <div class="rev_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit voluptas numquam molestiae veniam ut nihil iste deserunt veritatis sit.</div>
                             </div>
                             <div class="slide">
-                              
-                               <div class="rew_photo"><img src="img/review-2.jpg" alt=""></div>
+                                <div class="rev_photo"><img src="img/review-2.jpg" alt=""></div>
                                 <div class="rev_name">Антон</div>
                                 <div class="rev_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptatibus quaerat, dolores quam doloremque consectetur. Ipsa corporis velit provident debitis earum quasi, dignissimos quisquam quis inventore nobis.</div>
                             </div>
                             <div class="slide">
-                              
-                               <div class="rew_photo"><img src="img/review-3.jpg" alt=""></div>
+                                <div class="rev_photo"><img src="img/review-3.jpg" alt=""></div>
                                 <div class="rev_name">Алексей</div>
                                 <div class="rev_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quaerat sapiente suscipit dolore numquam maxime facere recusandae voluptate, voluptatum aliquid.</div>
                             </div>
                         </div>
-                     
+
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer class="section" id="contacts">
         <div class="container">
@@ -341,6 +376,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="fotorama-4.6.4/fotorama.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/myScript.js"></script>
 </body>
 
