@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -73,8 +73,8 @@
                         <div class="title_container mt-5">
                             <h1>Привет <br> Я Владислав Фомин</h1>
                             <h4>Фулл стек веб-разработчик</h4>
-                            <input type="button" value="Обо мне">
-                            <input type="button" value="Мои работы">
+                            <a href="#aboutMe"><input type="button" value="Обо мне"></a>
+                            <a href="#cases"><input type="button" value="Мои работы"></a>
                         </div>
                     </div>
                 </div>
@@ -82,13 +82,12 @@
         </section>
     </main>
     <section class="section" id="aboutMe">
-
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="inf">
                         <h2>ОБО МНЕ</h2>
-                        <img src="img/mini_man.png" alt="">
+                        <img data-src="img/mini_man.png" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta odio, dolor molestias ut, quas at iure eius ipsam fugiat minus, expedita possimus velit nobis ipsum obcaecati quae placeat a.</p>
                         <input type="button" value="Скачать резюме">
@@ -98,8 +97,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="section" id="services">
         <div class="header1">
             <div class="container">
@@ -145,41 +142,24 @@
     </section>
 
     <section class="section" id="cases">
-        <div class="header2">
-            <h2>КЕЙСЫ</h2>
-        </div>
-        <div class="main2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header2">
+                        <h2>КЕЙСЫ</h2>
+                    </div>
+                    <div class="main2">
+
                         <span class="case_span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, alias.</span>
                         <div class="case_slider">
                             <div class="slider">
 
                                 <div class="case_photo">
-                                    <a data-fancybox="gallery" href="img/case.jpg">
-                                        <img src="img/case.jpg" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="case_inf">
-                                    <h3>CLIENT:</h3>
-                                    <span>Какая-то компания</span>
-                                    <h3>WEBSITE:</h3>
-                                    <a href="https://vk.com/1ny_takoe" target="_blank">Ссылка</a>
-                                    <br><input type="button" value="Перейти на сайт">
-                                </div>
-                                <div class="case_text">
-                                    <h3>Название проекта</h3>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum modi voluptas vitae, id aliquam possimus eos, atque. Omnis a, minus natus nam, architecto sit ad fugiat quam? Dolorum, aliquam alias!</span>
-                                </div>
-                            </div>
-
-                            <div class="slider">
-                                <div class="case_photo">
-                                    <a data-fancybox="gallery" href="img/bg3.jpg">
-                                        <img src="img/bg3.jpg" alt="">
-                                    </a>
+                                    <div class="popup-gallery">
+                                        <a href="img/case-1.jpg">
+                                            <img data-src="img/case-1.jpg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="case_inf">
                                     <h3>CLIENT:</h3>
@@ -196,9 +176,32 @@
 
                             <div class="slider">
                                 <div class="case_photo">
-                                    <a data-fancybox="gallery" href="img/bg2.jpg">
-                                        <img src="img/bg2.jpg" alt="">
-                                    </a>
+                                    <div class="popup-gallery">
+                                        <a href="img/case-2.jpg">
+                                            <img data-src="img/case-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="case_inf">
+                                    <h3>CLIENT:</h3>
+                                    <span>Какая-то компания</span>
+                                    <h3>WEBSITE:</h3>
+                                    <a href="https://vk.com/1ny_takoe" target="_blank">Ссылка</a>
+                                    <br><input type="button" value="Перейти на сайт">
+                                </div>
+                                <div class="case_text">
+                                    <h3>Название проекта</h3>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum modi voluptas vitae, id aliquam possimus eos, atque. Omnis a, minus natus nam, architecto sit ad fugiat quam? Dolorum, aliquam alias!</span>
+                                </div>
+                            </div>
+
+                            <div class="slider">
+                                <div class="case_photo">
+                                    <div class="popup-gallery">
+                                        <a href="img/case-3.jpg">
+                                            <img data-src="img/case-3.jpg" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="case_inf">
                                     <h3>CLIENT:</h3>
@@ -231,35 +234,65 @@
                             <div class="container px-5">
                                 <div class="row">
                                     <h3>Тип сайта</h3>
-                                    <select name="4" id="4">
-                                        <option value="1">Выберите пункт...</option>
-                                        <option value="2">Option 1</option>
-                                        <option value="3">Option 2</option>
-                                        <option value="3">Option 3</option>
+                                    <select name="4" id="select1">
+                                        <option value="0" days="0">Выберите пункт...</option>
+                                        <option value="1000" days="2">Landing page</option>
+                                        <option value="2000" days="3">Cайт визитка</option>
+                                        <option value="3000" days="4">Корпоративный сайт</option>
                                     </select>
 
                                     <h3>Дизайн</h3>
-                                    <select name="4" id="4">
-                                        <option value="1">Выберите пункт...</option>
-                                        <option value="2">Option 1</option>
-                                        <option value="3">Option 2</option>
-                                        <option value="3">Option 3</option>
+                                    <select name="4" id="select2">
+                                        <option value="0" days="0">Выберите пункт...</option>
+                                        <option value="1000" days="1">Шаблонный дизайн</option>
+                                        <option value="3000" days="3">Уникальный дизайн</option>
                                     </select>
 
                                     <h3>Адаптивность</h3>
-                                    <select name="4" id="4">
-                                        <option value="1">Выберите пункт...</option>
-                                        <option value="2">Option 1</option>
-                                        <option value="3">Option 2</option>
-                                        <option value="3">Option 3</option>
+                                    <select name="4" id="select3">
+                                        <option value="0" days="0">Выберите пункт...</option>
+                                        <option value="2000" days="2">Только для смартфонов</option>
+                                        <option value="2000" days="2">Только для компьютров</option>
+                                        <option value="4000" days="4">Для всех устройств</option>
                                     </select>
-                                    <div class="text"><span>
-                                            <br>Сроки 0
-                                            <br>Стоимость 0
-                                        </span>
-                                        <form action="" class="cost">
-                                            <input type="button" value="Оставить заявку">
-                                        </form>
+                                    <div class="days">
+                                        <p class="text">Сроки</p>
+                                        <p class="digit">0</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text">Стоимость</p>
+                                        <p class="digit">0</p>
+                                    </div>
+                                    <div class="priceButton">
+
+                                        <button type="button" class="cost" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
+                                    </div>
+
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Оставьте сообщение</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="recipient-name" class="col-form-label">Email:</label>
+                                                            <input type="email" class="form-control" id="recipient-name" name="email" placeholder="example@domain.com" required="">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="message-text" class="col-form-label">Сообщение:</label>
+                                                            <textarea class="form-control" id="message-text"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                    <button type="button" class=" sendMessage">Отправить сообщение</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -280,19 +313,19 @@
                             <ul class="test1">
                                 <li>
                                     <i class="fa fa-smile-o icons2" aria-hidden="true"></i>
-                                    <h4>120</h4>Счастливых клиентов
+                                    <h4 class="spincrement">120</h4>Счастливых клиентов
                                 </li>
                                 <li>
                                     <i class="fa fa-code icons2" aria-hidden="true"></i>
-                                    <h4>4,600</h4>Часов работы
+                                    <h4 class="spincrement">4600</h4>Часов работы
                                 </li>
                                 <li>
                                     <i class="fa fa-check-square-o icons2" aria-hidden="true"></i>
-                                    <h4>340</h4>Проектов завершено
+                                    <h4 class="spincrement">340</h4>Проектов завершено
                                 </li>
                                 <li>
                                     <i class="fa fa-trophy icons2" aria-hidden="true"></i>
-                                    <h4>23</h4>Наград получено
+                                    <h4 class="spincrement">23</h4>Наград получено
                                 </li>
                             </ul>
                         </div>
@@ -310,21 +343,20 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-
                         <div class="rev_slider">
                             <div class="slide">
-                                <div class="rev_photo"><img src="img/review.jpg" alt=""></div>
+                                <div class="rev_photo"><img data-src="img/rev.jpg" alt=""></div>
                                 <div class="rev_name">Владислав</div>
                                 <div class="rev_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit voluptas numquam molestiae veniam ut nihil iste deserunt veritatis sit.</div>
                             </div>
                             <div class="slide">
-                                <div class="rev_photo"><img src="img/review-2.jpg" alt=""></div>
+                                <div class="rev_photo"><img data-src="img/rev%20(2).jpg" alt=""></div>
                                 <div class="rev_name">Антон</div>
                                 <div class="rev_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptatibus quaerat, dolores quam doloremque consectetur. Ipsa corporis velit provident debitis earum quasi, dignissimos quisquam quis inventore nobis.</div>
                             </div>
                             <div class="slide">
-                                <div class="rev_photo"><img src="img/review-3.jpg" alt=""></div>
-                                <div class="rev_name">Алексей</div>
+                                <div class="rev_photo"><img data-src="img/rev%20(3).jpg" alt=""></div>
+                                <div class="rev_name">Мария</div>
                                 <div class="rev_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quaerat sapiente suscipit dolore numquam maxime facere recusandae voluptate, voluptatum aliquid.</div>
                             </div>
                         </div>
@@ -361,7 +393,6 @@
                         <form class="button">
 
                             <input class="field" type="text" placeholder="Имя" required>
-
                             <input class="field" id="Email" type="Email" placeholder="Email" autocomplete="on" required>
                             <br><textarea name="message" id="1" cols="45" rows="10" placeholder="Сообщение"></textarea>
                             <br><input type="submit" value="Отправить" class="last_button">
@@ -376,7 +407,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="fotorama-4.6.4/fotorama.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
     <script src="js/myScript.js"></script>
 </body>
 
